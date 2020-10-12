@@ -8,15 +8,15 @@ public class KantorModel {
     private ArrayList<Waluta> listaWalut;
 
     public KantorModel() {
-        kantorProcessor=new KantorProcessor();
+        kantorProcessor =new KantorNBPProcessor();
     }
 
     public double przewalutuj(double ilosc, String kodWalutyZrodlowej, String kodWalutyDocelowej){
         return kantorProcessor.przewalutuj(ilosc,kodWalutyZrodlowej,kodWalutyDocelowej);
     }
 
-    public void createListaWalut(){
-        listaWalut = kantorProcessor.getListaWalut();
+    public void setListaWalut(){
+        listaWalut = kantorProcessor.setListaWalut();
     }
 
     public ArrayList<Waluta> getListaWalut(){

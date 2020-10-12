@@ -28,7 +28,7 @@ public class KantorController {
                 walutaZrodlowaIndex=kantorView.getZrodlowaWalutaIndex();
                 walutaDocelowaIndex=kantorView.getDocelowaWalutaIndex();
 
-                kantorModel.createListaWalut();
+                kantorModel.setListaWalut();
                 listaWalut = kantorModel.getListaWalut();
 
                 kodWalutyZrodlowej=listaWalut.get(walutaZrodlowaIndex).getKodWaluty();

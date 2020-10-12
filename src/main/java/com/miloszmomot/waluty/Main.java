@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        KantorProcessor kantorProcessor=new KantorProcessor();
-        ArrayList<Waluta> listaWalut=kantorProcessor.getListaWalut();
+        KantorNBPProcessor kantorNBPProcessor =new KantorNBPProcessor();
+        ArrayList<Waluta> listaWalut= kantorNBPProcessor.setListaWalut();
 
         KantorView kantorView = new KantorView(listaWalut);
         KantorModel kantorModel = new KantorModel();
